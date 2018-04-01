@@ -8,7 +8,8 @@ def post_create(request):
 def post_detail(request):
     return HttpResponse("<h1>detail</h1>")
 def post_list(request):
-    return HttpResponse("<h1>list</h1>")
+    return render(request,"index.html",{})
+    # return HttpResponse("<h1>list</h1>")
 def post_update(request):
     return HttpResponse("<h1>update</h1>")
 def post_delete(request):
